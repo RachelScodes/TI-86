@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>TI-86 Calculator</title>
+   <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+<body>
+   <div id="container">
+   <div id="ruby">
+      <%= "#{@output}" %>
+   </div>
+   <h1>Welcome to the T1-86</h1>
+   <p>Enter the following commands after "calc/"
+      <br>to perform the given standard operations:</p>
+   <ul>
+      <li><a href="/calc/add/<%= @num1 %>/<%= @num2 %>">"add"<br>to add</a></li>
+      <li><a href="/calc/subt/<%= @num1 %>/<%= @num2 %>">"subt"<br>to subtract</a></li>
+      <li><a href="/calc/mult/<%= @num1 %>/<%= @num2 %>">"mult"<br>to multiply</a></li>
+      <li><a href="/calc/div/<%= @num1 %>/<%= @num2 %>">"div"<br>to divide</a></li>
+   </ul>
+   <p>Also try these bonus operations:</p>
+   <ul>
+      <li><a href="/calc/root/<%= @num1 %>/<%= @num2 %>">"root"<br>to get square roots</a></li>
+      <li><a href="/calc/exp/<%= @num1 %>/<%= @num2 %>">"exp"<br>to get exponents</a></li>
+   </ul>
+
+   <footer>By Rachel Smyth</p>
+   </div>
+</body>
+</html>
