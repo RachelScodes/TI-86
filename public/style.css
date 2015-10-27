@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Calculum';
+  src: url('digital-7.mono.ttf')  format('truetype')
+}
+
+body {
+   margin-top: 20px;
+   font-family: sans-serif;
+}
+
+#container {
+   width: 500px;
+
+   margin: 0 auto;
+   padding-top: 30px;
+   padding-bottom: 15px;
+
+   background-color: black;
+   border-radius: 20px;
+
+   text-align: center;
+   color: white;
+}
+
+#ruby {
+   width: 460px;
+   margin: 50px auto 50px auto;
+   padding: 10px 0 10px 0;
+   height: 165px;
+
+   background-color: #BED3B6;
+   border-radius: 15px;
+
+   font-family: 'Calculum', sans-serif;
+   font-size: 25px;
+   color: #6A6465;
+}
+
+ul {
+   padding-left: 0;
+}
+
+li {
+   padding-right: 11px;
+   padding-left: 10px;
+
+   list-style: none;
+   display: inline-block;
+
+   border-radius: 5px;
+   border: 2px solid #394A59;
+}
+
+span {
+   font-weight: bold;
+}
+
+span.a {
+   color: blue;
+}
+
+span.b {
+   color: red;
+}
+
+
+#ruby h2 {
+   margin: 10px 0 10px 0;
+
+   position: relative;
+   top: 50%;
+   transform: translateY(-56%);
+}
+
+footer {
+   margin: 50px auto 5px auto;
+   width: 500px;
+}
+
+a,
+a:visited {
+   color: white
+}
+
+/* animate output */
+.calc {
+  animation: blinker 0.6s linear infinite;
+  color: #223A3A;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
